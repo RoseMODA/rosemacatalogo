@@ -111,95 +111,106 @@
   <!-- "Ver todo" button -->
   <button class="btn-ver-todo" aria-label="Ver todo el catálogo">Ver Todo</button>
 
-  <!-- Banner Nuevos ingresos -->
-  <div class="banner-nuevos" aria-live="polite">Nuevos Ingresos!</div>
+  <!-- Carousel sections container -->
+  <div id="carousel-sections">
+    <!-- Banner Nuevos ingresos -->
+    <div class="banner-nuevos" aria-live="polite">Nuevos Ingresos!</div>
+    
+    <!-- Product carousel -->
+    <section class="carousel" aria-label="Catálogo de productos nuevos">
+      <button class="arrow-btn prev" aria-label="Desplazar carrusel a la izquierda" tabindex="0">❮</button>
+      <div class="carousel-track" id="carousel-track" aria-live="polite" aria-atomic="true">
+        <article class="carousel-item" role="group" aria-label="Remera Princesa, precio 12.000 pesos argentinos">
+          <img src="/assets/img/IMG_1319.jpg" loading="lazy"
+               onerror="this.style.display='none';"/>
+          <h3 class="product-title">Remera Princesa</h3>
+          <p class="product-price">$ 12.000</p>
+          <p class="product-sku">M-REMP01</p>
+        </article>
 
-  <!-- Product carousel -->
-  <section class="carousel" aria-label="Catálogo de productos nuevos">
-    <button class="arrow-btn prev" aria-label="Desplazar carrusel a la izquierda" tabindex="0">❮</button>
-    <div class="carousel-track" id="carousel-track" aria-live="polite" aria-atomic="true">
-      <article class="carousel-item" role="group" aria-label="Remera Princesa, precio 12.000 pesos argentinos">
-        <img src="/assets/img/IMG_1319.jpg" loading="lazy"
-             onerror="this.style.display='none';"/>
-        <h3 class="product-title">Remera Princesa</h3>
-        <p class="product-price">$ 12.000</p>
-        <p class="product-sku">M-REMP01</p>
-      </article>
+        <article class="carousel-item" role="group" aria-label="Remera Combinada, precio 6.000 pesos argentinos">
+          <img src="assets/img/IMG_1294.JPG" loading="lazy"
+               onerror="this.style.display='none';"/>
+          <h3 class="product-title">Remera Combinada</h3>
+          <p class="product-price">$ 6.000</p>
+          <p class="product-sku">M-REMP01</p>
+        </article>
 
-      <article class="carousel-item" role="group" aria-label="Remera Combinada, precio 6.000 pesos argentinos">
-        <img src="assets/img/IMG_1294.JPG" loading="lazy"
-             onerror="this.style.display='none';"/>
-        <h3 class="product-title">Remera Combinada</h3>
-        <p class="product-price">$ 6.000</p>
-        <p class="product-sku">M-REMP01</p>
-      </article>
+        <article class="carousel-item" role="group" aria-label="Chaleco Engomado, precio 40.000 pesos argentinos">
+          <img src="assets/img/IMG_1313.jpg" loading="lazy"
+               onerror="this.style.display='none';"/>
+          <h3 class="product-title">Chaleco Engomado</h3>
+          <p class="product-price">$ 40.000</p>
+          <p class="product-sku">M-REMP01</p>
+        </article>
 
-      <article class="carousel-item" role="group" aria-label="Chaleco Engomado, precio 40.000 pesos argentinos">
-        <img src="assets/img/IMG_1313.jpg" loading="lazy"
-             onerror="this.style.display='none';"/>
-        <h3 class="product-title">Chaleco Engomado</h3>
-        <p class="product-price">$ 40.000</p>
-        <p class="product-sku">M-REMP01</p>
-      </article>
+        <article class="carousel-item" role="group" aria-label="Sueter Lana, precio 30.000 pesos argentinos">
+          <img src="assets/img/IMG_1300.JPG" loading="lazy"
+               onerror="this.style.display='none';"/>
+          <h3 class="product-title">Sueter Lana</h3>
+          <p class="product-price">$ 30.000</p>
+          <p class="product-sku">M-REMP01</p>
+        </article>
+      </div>
+      <button class="arrow-btn next" aria-label="Desplazar carrusel a la derecha" tabindex="0">❯</button>
+    </section>
 
-      <article class="carousel-item" role="group" aria-label="Sueter Lana, precio 30.000 pesos argentinos">
-        <img src="assets/img/IMG_1300.JPG" loading="lazy"
-             onerror="this.style.display='none';"/>
-        <h3 class="product-title">Sueter Lana</h3>
-        <p class="product-price">$ 30.000</p>
-        <p class="product-sku">M-REMP01</p>
-      </article>
+    <!-- Ofertas banner -->
+    <div class="banner-nuevos" aria-live="polite">OFERTAS!</div>
+    
+    <!-- Ofertas -->
+      <!-- Product carousel - Ofertas -->
+    <section class="carousel" aria-label="Catálogo de productos en oferta" style="margin-top: 3rem;">
+
+      <button class="arrow-btn prev" aria-label="Desplazar carrusel de ofertas a la izquierda" tabindex="0">❮</button>
+      <div class="carousel-track" id="carousel-track-ofertas" aria-live="polite" aria-atomic="true">
+        <article class="carousel-item" role="group" aria-label="Remera Descuento, precio 9.000 pesos argentinos">
+          <img src="assets/img/IMG_1287.JPG" loading="lazy"
+               onerror="this.style.display='none';"/>
+          <h3 class="product-title">Remera Princesa</h3>
+          <p class="product-price line-through text-gray-500">$ 12.000</p>
+          <p class="product-price text-red-600 font-bold">$ 9.000</p>
+          <p class="product-sku">M-REMP01</p>
+        </article>
+
+        <article class="carousel-item" role="group" aria-label="Remera Combinada Oferta, precio 5.000 pesos argentinos">
+          <img src="/assets/img/IMG_1298.JPG" loading="lazy"
+               onerror="this.style.display='none';"/>
+          <h3 class="product-title">Remera Combinada</h3>
+          <p class="product-price line-through text-gray-500">$ 6.000</p>
+          <p class="product-price text-red-600 font-bold">$ 5.000</p>
+          <p class="product-sku">M-REMP02</p>
+        </article>
+
+        <article class="carousel-item" role="group" aria-label="Chaleco Engomado Oferta, precio 35.000 pesos argentinos">
+          <img src="assets/img/IMG_1308.JPG" loading="lazy"
+               onerror="this.style.display='none';"/>
+          <h3 class="product-title">Chaleco Engomado</h3>
+          <p class="product-price line-through text-gray-500">$ 40.000</p>
+          <p class="product-price text-red-600 font-bold">$ 35.000</p>
+          <p class="product-sku">M-REMP03</p>
+        </article>
+
+        <article class="carousel-item" role="group" aria-label="Sueter Lana Oferta, precio 25.000 pesos argentinos">
+          <img src="assets/img/IMG_1301.JPG" loading="lazy"
+               onerror="this.style.display='none';"/>
+          <h3 class="product-title">Sueter Lana</h3>
+          <p class="product-price line-through text-gray-500">$ 30.000</p>
+          <p class="product-price text-red-600 font-bold">$ 25.000</p>
+          <p class="product-sku">M-REMP04</p>
+        </article>
+      </div>
+      <button class="arrow-btn next" aria-label="Desplazar carrusel de ofertas a la derecha" tabindex="0">❯</button>
+    </section>
+  </div>
+
+  <!-- Full catalog grid (hidden by default) -->
+  <div id="full-catalog" class="hidden">
+    <div class="banner-nuevos" aria-live="polite">CATÁLOGO COMPLETO</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-6 max-w-7xl mx-auto" id="catalog-grid">
+      <!-- Products will be dynamically inserted here -->
     </div>
-    <button class="arrow-btn next" aria-label="Desplazar carrusel a la derecha" tabindex="0">❯</button>
-  </section>
-
-  <!-- Ofertas banner -->
-  <div class="banner-nuevos" aria-live="polite">OFERTAS!</div>
-  
-  <!-- Ofertas -->
-    <!-- Product carousel - Ofertas -->
-  <section class="carousel" aria-label="Catálogo de productos en oferta" style="margin-top: 3rem;">
-
-    <button class="arrow-btn prev" aria-label="Desplazar carrusel de ofertas a la izquierda" tabindex="0">❮</button>
-    <div class="carousel-track" id="carousel-track-ofertas" aria-live="polite" aria-atomic="true">
-      <article class="carousel-item" role="group" aria-label="Remera Descuento, precio 9.000 pesos argentinos">
-        <img src="assets/img/IMG_1287.JPG" loading="lazy"
-             onerror="this.style.display='none';"/>
-        <h3 class="product-title">Remera Princesa</h3>
-        <p class="product-price line-through text-gray-500">$ 12.000</p>
-        <p class="product-price text-red-600 font-bold">$ 9.000</p>
-        <p class="product-sku">M-REMP01</p>
-      </article>
-
-      <article class="carousel-item" role="group" aria-label="Remera Combinada Oferta, precio 5.000 pesos argentinos">
-        <img src="/assets/img/IMG_1298.JPG" loading="lazy"
-             onerror="this.style.display='none';"/>
-        <h3 class="product-title">Remera Combinada</h3>
-        <p class="product-price line-through text-gray-500">$ 6.000</p>
-        <p class="product-price text-red-600 font-bold">$ 5.000</p>
-        <p class="product-sku">M-REMP02</p>
-      </article>
-
-      <article class="carousel-item" role="group" aria-label="Chaleco Engomado Oferta, precio 35.000 pesos argentinos">
-        <img src="assets/img/IMG_1308.JPG" loading="lazy"
-             onerror="this.style.display='none';"/>
-        <h3 class="product-title">Chaleco Engomado</h3>
-        <p class="product-price line-through text-gray-500">$ 40.000</p>
-        <p class="product-price text-red-600 font-bold">$ 35.000</p>
-        <p class="product-sku">M-REMP03</p>
-      </article>
-
-      <article class="carousel-item" role="group" aria-label="Sueter Lana Oferta, precio 25.000 pesos argentinos">
-        <img src="assets/img/IMG_1301.JPG" loading="lazy"
-             onerror="this.style.display='none';"/>
-        <h3 class="product-title">Sueter Lana</h3>
-        <p class="product-price line-through text-gray-500">$ 30.000</p>
-        <p class="product-price text-red-600 font-bold">$ 25.000</p>
-        <p class="product-sku">M-REMP04</p>
-      </article>
-    </div>
-    <button class="arrow-btn next" aria-label="Desplazar carrusel de ofertas a la derecha" tabindex="0">❯</button>
-  </section>
+  </div>
 
  <!-- Footer -->
   <footer class="py-12">
